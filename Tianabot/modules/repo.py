@@ -11,9 +11,9 @@ from Tianabot import pbot, START_IMG, SUPPORT_CHAT, BOT_NAME, OWNER_USERNAME
 async def repo(_, message):
     await message.reply_photo(
         photo=START_IMG,
-        caption=f"""✨ **Hey I'm** {BOT_NAME}
+        caption=f"""👋 **Hey I'm** {BOT_NAME}
 
-**Owner : [Click Here](https://t.me/{OWNER_USERNAME})**
+**Creator : [Sangram](https://t.me/OpSangram)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
@@ -24,9 +24,9 @@ async def repo(_, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="📄 Source", url="https://github.com/prince-botz/tianabot"), 
+                    InlineKeyboardButton(text="📄 Source", url="https://t.me/OpSangram"), 
                     InlineKeyboardButton(
-                        "🫂 Support", url=f"https://t.me/{SUPPORT_CHAT}")
+                        "🫂 Support", url=f"https://t.me/Miyuu_support")
                 ]
             ]
         )
