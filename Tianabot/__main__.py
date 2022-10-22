@@ -97,14 +97,14 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="❰ 𝙄𝙣𝙛𝙤 ❱", callback_data="about_"),
-        InlineKeyboardButton(text="❰ 𝙊𝙬𝙣𝙚𝙧 ❱", url=f"https://t.me/{OWNER_USERNAME}"),
+        InlineKeyboardButton(text="❰ 𝙊𝙬𝙣𝙚𝙧 ❱", url=f"https://t.me/MIZUKI_CUTIE"),
     ],
    [
-        InlineKeyboardButton(text="❰ 𝙐𝙥𝙙𝙖𝙩𝙚𝙨 ❱", url=f"http://t.me/{UPDATE_CHANNEL}"),
-        InlineKeyboardButton(text="❰𝙎𝙪𝙥𝙥𝙤𝙧𝙩 ❱", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="❰ 𝙐𝙥𝙙𝙖𝙩𝙚𝙨 ❱", url=f"http://t.me/Miyuu_Updates"),
+        InlineKeyboardButton(text="❰𝙎𝙪𝙥𝙥𝙤𝙧𝙩 ❱", url=f"https://t.me/Miyuu_support"),
     ],
     [  
-        InlineKeyboardButton(text="❰ 𝘼𝙙𝙙 𝙢𝙚 𝙩𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ❱", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+        InlineKeyboardButton(text="❰ 𝘼𝙙𝙙 𝙢𝙚 𝙩𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ❱", url=f"https://t.me/Miyuu_robot?startgroup=true"),
     ], 
     
 ]
@@ -247,8 +247,8 @@ def start(update: Update, context: CallbackContext):
                     sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(
                  [
-                  [InlineKeyboardButton(text="📄 Source", url="https://github.com/prince-botz/tianabot"), 
-                   InlineKeyboardButton(text="🫂 Support", url=f"https://t.me/{SUPPORT_CHAT}")]
+                  [InlineKeyboardButton(text="📄 Source", url="https://t.me/OpSangram"), 
+                   InlineKeyboardButton(text="🫂 Support", url=f"https://t.me/Miyuu_support")]
                  ]
               ),
                 parse_mode=ParseMode.MARKDOWN,              
@@ -400,10 +400,10 @@ def tiana_callback_handler(update, context):
 Cʟɪᴄᴋ  Bᴇʟᴏᴡ  Bᴜᴛᴛᴏɴ  Tᴏ  Aᴅᴅ  Bᴏᴛ  Iɴ  Yᴏᴜʀ  Gʀᴏᴜᴘ. Bᴀsɪᴄ  Tᴏᴜʀ  Sᴛᴀʀᴛᴇᴅ  Tᴏ  Kɴᴏᴡ  Aʙᴏᴜᴛ  Hᴏᴡ  Tᴏ  Usᴇ  Mᴇ*""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-              [[InlineKeyboardButton(text="𝙎𝙚𝙩𝙪𝙥 𝙏𝙪𝙩𝙤𝙧𝙞𝙖𝙡 🎥", callback_data="tiana_vida")],
-               [InlineKeyboardButton(text="➕️ 𝘼𝙙𝙙 𝙢𝙚 𝙩𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],       
-                [InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="tiana_"),
-                 InlineKeyboardButton(text="➡️", callback_data="tiana_helpa")]
+              [[InlineKeyboardButton(text="𝙎𝙚𝙩𝙪𝙥 𝙏𝙪𝙩𝙤𝙧𝙞𝙖𝙡 🎥", callback_data="Miyuu_vida")],
+               [InlineKeyboardButton(text="➕️ 𝘼𝙙𝙙 𝙢𝙚 𝙩𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕️", url=f"https://t.me/Miyuu_robot?startgroup=true")],       
+                [InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="Miyuu_"),
+                 InlineKeyboardButton(text="➡️", callback_data="Miyuu_helpa")]
               ]
             ),
         )
@@ -417,8 +417,8 @@ Bᴇғᴏʀᴇ  Wᴇ  Gᴏ,  I  Nᴇᴇᴅ  Aᴅᴍɪɴ  Pᴇʀᴍɪssɪᴏɴs  
 3). Gɪᴠɪɴɢ  Fᴜʟʟ  Pᴇʀᴍɪssɪᴏɴs  Mᴀᴋᴇ  Tɪᴀɴᴀ  Fᴜʟʟʏ  Usᴇғᴜʟ</b>""",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-              [[InlineKeyboardButton(text="⬅️", callback_data="tiana_help"),
-                InlineKeyboardButton(text="➡️", callback_data="tiana_helpb")],               
+              [[InlineKeyboardButton(text="⬅️", callback_data="Miyuu_help"),
+                InlineKeyboardButton(text="➡️", callback_data="Miyuu_helpb")],               
               ]
             ),
         )
@@ -441,8 +441,8 @@ Rᴇғᴇʀ  Hᴇʟᴘ  Mᴇɴᴜ  Tᴏ  Sᴇᴇ  Eᴠᴇʀʏᴛʜɪɴɢ  Iɴ  D
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
-                [InlineKeyboardButton(text="⬅️", callback_data="tiana_helpa"),
-                 InlineKeyboardButton(text="➡️", callback_data="tiana_helpc")]
+                [InlineKeyboardButton(text="⬅️", callback_data="Miyuu_helpa"),
+                 InlineKeyboardButton(text="➡️", callback_data="Miyuu_helpc")]
                 ]
             ),
         )
@@ -462,8 +462,8 @@ Sᴇɴᴅ  /chatbot  Oɴ  Aɴᴅ  Rᴇᴘʟʏ  Tᴏ  Aɴʏ  Oғ  Mʏ  Mᴇssᴀ�
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
-                [InlineKeyboardButton(text="⬅️", callback_data="tiana_helpb"),
-                 InlineKeyboardButton(text="➡️", callback_data="tiana_helpd")]
+                [InlineKeyboardButton(text="⬅️", callback_data="Miyuu_helpb"),
+                 InlineKeyboardButton(text="➡️", callback_data="Miyuu_helpd")]
                 ]
             ),
         )
@@ -482,8 +482,8 @@ Nᴏᴛᴇ-  ɴɪɢʜᴛ  ᴍᴏᴅᴇ  ᴄʜᴀᴛs  ɢᴇᴛ  ᴀᴜᴛᴏᴍ�
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [
-                [InlineKeyboardButton(text="⬅️", callback_data="tiana_helpc"),
-                 InlineKeyboardButton(text="➡️", callback_data="tiana_helpe")]
+                [InlineKeyboardButton(text="⬅️", callback_data="Miyuu_helpc"),
+                 InlineKeyboardButton(text="➡️", callback_data="Miyuu_helpe")]
                 ]
             ),
         )
@@ -502,8 +502,8 @@ Nᴏᴛᴇ-  ɴɪɢʜᴛ  ᴍᴏᴅᴇ  ᴄʜᴀᴛs  ɢᴇᴛ  ᴀᴜᴛᴏᴍ�
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-              [InlineKeyboardButton(text="𝙐𝙥𝙙𝙖𝙩𝙚", url=f"https://t.me/{UPDATE_CHANNEL}"),       
-              InlineKeyboardButton(text="𝙎𝙪𝙥𝙥𝙤𝙧𝙩", url=f"https://t.me/{SUPPORT_CHAT}")],       
+              [InlineKeyboardButton(text="𝙐𝙥𝙙𝙖𝙩𝙚", url=f"https://t.me/Miyuu_Updates"),       
+              InlineKeyboardButton(text="𝙎𝙪𝙥𝙥𝙤𝙧𝙩", url=f"https://t.me/Miyuu_support")],       
               [InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_")]]
             ),
         )
@@ -523,8 +523,8 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="➕ 𝘼𝙡𝙡 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 ➕", callback_data="help_back")],
-                [InlineKeyboardButton(text="⬅️", callback_data="tiana_helpd"),
-                InlineKeyboardButton(text="𝙈𝙖𝙞𝙣 𝙈𝙚𝙣𝙪", callback_data="tiana_")]]
+                [InlineKeyboardButton(text="⬅️", callback_data="Miyuu_helpd"),
+                InlineKeyboardButton(text="𝙈𝙖𝙞𝙣 𝙈𝙚𝙣𝙪", callback_data="Miyuu_")]]
             ),
         )
     elif query.data == "tiana_music":
@@ -701,12 +701,12 @@ Support
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Nᴇᴡꜱ", url=f"t.me/{UPDATE_CHANNEL}"),
-                    InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url=f"{DONATION_LINK}"),
+                    InlineKeyboardButton(text="Nᴇᴡꜱ", url=f"t.me/Miyuu_Updates"),
+                    InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url=f"t.me/Muskan_Assistant"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT_CHAT}"),
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/{UPDATE_CHANNEL}"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"t.me/Miyuu_support"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/Miyuu_Updates"),
                  ],
                  [
                     InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_"),
@@ -724,7 +724,7 @@ Support
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="📄 𝙎𝙤𝙪𝙧𝙘𝙚", url="github.com/Prince-Botz/Tianabot"),                 
+                    InlineKeyboardButton(text="📄 𝙎𝙤𝙪𝙧𝙘𝙚", url="t.me/OpSangram"),                 
                     InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_"),
                  ]    
                 ]
@@ -754,15 +754,15 @@ def tiana_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                [
                  [
-                     InlineKeyboardButton(text="❗️ 𝘼𝙗𝙤𝙪𝙩", callback_data="tiana_about"),
-                     InlineKeyboardButton(text="📄 𝙎𝙤𝙪𝙧𝙘𝙚", callback_data="tiana_source"),
+                     InlineKeyboardButton(text="❗️ 𝘼𝙗𝙤𝙪𝙩", callback_data="Miyuu_about"),
+                     InlineKeyboardButton(text="📄 𝙎𝙤𝙪𝙧𝙘𝙚", callback_data="Miyuu_source"),
                  ],
                  [  
-                    InlineKeyboardButton(text="🫂 𝙎𝙪𝙥𝙥𝙤𝙧𝙩", callback_data="tiana_support"),
-                    InlineKeyboardButton(text="👨‍✈️ 𝙊𝙬𝙣𝙚𝙧", url=f"t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton(text="🫂 𝙎𝙪𝙥𝙥𝙤𝙧𝙩", callback_data="Miyuu_support"),
+                    InlineKeyboardButton(text="👨‍✈️ 𝙊𝙬𝙣𝙚𝙧", url=f"t.me/MIZUKI_CUTIE"),
                  ],
                  [
-                     InlineKeyboardButton(text="𝙏𝙚𝙧𝙢𝙨 𝘼𝙣𝙙 𝘾𝙤𝙣𝙙𝙞𝙩𝙞𝙤𝙣𝙨❗️", callback_data="tiana_term"),
+                     InlineKeyboardButton(text="𝙏𝙚𝙧𝙢𝙨 𝘼𝙣𝙙 𝘾𝙤𝙣𝙙𝙞𝙩𝙞𝙤𝙣𝙨❗️", callback_data="Miyuu_term"),
                  ],
                  [
                      InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_back"),
@@ -1066,7 +1066,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "𝙏𝙞𝙖𝙣𝙖𝘽𝙤𝙩 𝙐𝙥𝙙𝙖𝙩𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮✅")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "𝙈𝙞𝙮𝙪𝙪 𝘽𝙤𝙩 𝙐𝙥𝙙𝙖𝙩𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮✅")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
